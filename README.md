@@ -1,3 +1,9 @@
+This fork was created to change the way the original gem generates the callback_path.
+
+The reason for this is because we're using omniauth-google-oauth2 to sign in with Google, and when this is registered into the devise routes, it hijacks all requests beginning with "auth" and prepends "users". This broke the original, unforked version.
+
+---
+
 # Omniauth::Wix
 
 Wix Strategy for OmniAuth 2.0
